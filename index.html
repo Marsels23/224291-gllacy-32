@@ -26,7 +26,7 @@
         <a href="tel:+78005558628">+7 800 555 86 28</a>
       </div>
       <section class="user-menu">
-        <form action="#" method="get">
+        <form action="https://echo.htmlacademy.ru" method="get">
           <fieldset class="search">
             <legend class="visibility-hidden">Форма поиска</legend>
             <label class="label-search" for="search">
@@ -49,12 +49,13 @@
 
   <!-- основное содержимое страницы -->
   <main class="main-index">
+    <h1 class="visibility-hidden">Интернет-магазин мороженого "Глейси"</h1>
     <section class="slider">
-      <h1 class="visibility-hidden">Галерея продукции</h1>
+      <h2 class="visibility-hidden">Галерея продукции</h2>
       <article class="current-slider">
-        <h2 class="product-name">
+        <h3 class="product-name">
           Нежный пломбир с клубничным джемом
-        </h2>
+        </h3>
         <p class="description">
           Натуральное мороженое из свежих сливок
           и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи.
@@ -63,9 +64,9 @@
         <a class="btn-get">Заказать</a>
       </article>
       <article class="current-slider">
-        <h2 class="product-name">
+        <h3 class="product-name">
           Сливочное мороженое со вкусом банана
-        </h2>
+        </h3>
         <p class="description">
           Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и наслаждение даже в самый жаркий летний
           день.
@@ -74,44 +75,55 @@
         <a class="btn-get">Заказать</a>
       </article>
       <article class="current-slider">
-        <h2 class="product-name">
+        <h3 class="product-name">
           Карамельный пломбир с маршмеллоу
-        </h2>
+        </h3>
         <p class="description">
           Необычный сладкий дессерт с карамельный топпингом и кусочками зефира завоюет сердца сладкоежек всех возрастов.
         </p>
         <img src="#" alt="Карамельный пломбир с маршмеллоу">
         <a class="btn-get">Заказать</a>
       </article>
+      <button class="arrow arrow-left" aria-label="листать влево"></button>
+      <button class="arrow arrow-right" aria-label="листать вправо"></button>
+      <div class="slider-controls">
+        <button class="dot-page active" aria-label="первый слайд"></button>
+        <button class="dot-page" aria-label="второй слайд"></button>
+        <button class="dot-page" aria-label="третий слайд"></button>
+
+      </div>
       <div class="social-web">
         <h2 class="visibility-hidden">Мы в социальных сетях</h2>
         <ul class="list-icons">
           <li class="vk">
-            <a href="#" target="_blank"><span class="visibility-hidden">вконтакте</span></a>
+            <a href="https://vk.com/htmlacademy" target="_blank"><span class="visibility-hidden">вконтакте</span></a>
           </li>
           <li class="fb">
-            <a href="#" target="_blank"><span class="visibility-hidden">фейсбук</span></a>
+            <a href="https://www.facebook.com/htmlacademy" target="_blank"><span
+                class="visibility-hidden">фейсбук</span></a>
           </li>
           <li class="ig">
-            <a href="#" target="_blank"><span class="visibility-hidden">инстаграмм</span></a>
+            <a href="https://www.instagram.com/htmlacademy/" target="_blank"><span
+                class="visibility-hidden">инстаграмм</span></a>
           </li>
         </ul>
       </div>
     </section>
     <section class="profit">
+      <h2 class="profit-title">Заказывайте мороженое и получайте подарки!</h2>
       <article class="berries promo">
-        <h1 class="title-cards">
+        <h3 class="title-cards">
           Малинка даром!
-        </h1>
+        </h3>
         <p class="conditions">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку маринового
           варенья бесплатно.
         </p>
         <a href="#" class="btn-gift">Хочу подарок</a>
       </article>
       <article class="sweets promo">
-        <h1 class="title-cards">
+        <h3 class="title-cards">
           Маршмеллоу даром!
-        </h1>
+        </h3>
         <p class="conditions">При покупке 2 кг пломбира, добавим в ваш заказ упаковку нежных зефирок совершенно
           бесплатно.
         </p>
@@ -119,46 +131,45 @@
       </article>
     </section>
     <section class="popular">
-      <h1 class="visibility-hidden">Популярные сорта</h1>
       <h2 class="advice">Попробуйте самые популярные вкусы нашего мороженого</h2>
       <article class="product-card">
         <img class="product-photo" src="#" alt="Малинка">
-        <h2 class="ice-cream-name">Малинка</h2>
+        <h3 class="ice-cream-name">Малинка</h3>
         <p class="desc">
           Сливочное мороженое с малиновым джемом
         </p>
         <p class="price">310 ₽/кг</p>
-        <a class="visibility-hidden buy-btn" href="#">Купить</a>
+        <a class="buy-btn" href="#">Купить</a>
       </article>
 
       <article class="product-card">
         <img class="product-photo" src="#" alt="Фисташка">
-        <h2 class="ice-cream-name">Фисташка</h2>
+        <h3 class="ice-cream-name">Фисташка</h3>
         <p class="desc">
           Фисташковый пломбир с кусочками шоколада
         </p>
         <p class="price">340 ₽/кг</p>
-        <a class="visibility-hidden buy-btn" href="#">Купить</a>
+        <a class="buy-btn" href="#">Купить</a>
       </article>
 
       <article class="product-card">
         <img class="product-photo" src="#" alt="Черника">
-        <h2 class="ice-cream-name">Черника</h2>
+        <h3 class="ice-cream-name">Черника</h3>
         <p class="desc">
           Крем-брюле с черничным джемом
         </p>
         <p class="price">330 ₽/кг</p>
-        <a class="visibility-hidden buy-btn" href="#">Купить</a>
+        <a class="buy-btn"  href="#">Купить</a>
       </article>
 
       <article class="product-card">
         <img class="product-photo" src="#" alt="Бабл-гам">
-        <h2 class="ice-cream-name">Бабл-гам</h2>
+        <h3 class="ice-cream-name">Бабл-гам</h3>
         <p class="desc">
           Ванильный пломбир со сладкой посыпкой
         </p>
         <p class="price">320 ₽/кг</p>
-        <a class="visibility-hidden buy-btn" href="#">Купить</a>
+        <a class="buy-btn href="#">Купить</a>
       </article>
     </section>
     <section class="info-company">
@@ -176,42 +187,44 @@
           мороженому растаять и позволяет сохранить превосходный вкус.</li>
       </ul>
     </section>
-    <article class="blogging">
-      <p class="new">
-        Новое в нашем блоге
-      </p>
-      <a class="content" href="#">
-        10 способов сервировки фруктовых щербетов
-        к столу
-      </a>
-    </article>
+    <a class="blog-link">
+      <article class="blogging">
+        <p class="new">
+          Новое в нашем блоге
+        </p>
+        <h2 class="content">
+          10 способов сервировки фруктовых щербетов
+          к столу
+        </h2>
+      </article>
+    </a>
     <section class="subscribe">
-      <h1 class="visibility-hidden">Форма подписки</h1>
+      <h2 class="visibility-hidden">Форма подписки</h2>
       <p class="newsletter">
         Подпишитесь на нашу сладкую рассылку и будьте всегда
         в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды.
         Честно =)
       </p>
-      <form action="#" method="get">
+      <form action="https://echo.htmlacademy.ru" method="get">
         <div class="input-field">
-          <input id="email" type="email" name="email"><label for="email">Электронная почта</label>
+          <input id="email" type="email" name="email" required placeholder="email@example.com"><label
+            for="email">Электронная почта</label>
         </div>
         <input class="btn" type="submit" value="Отправить">
       </form>
     </section>
-    <div class="wrap">
-      <section class="delivery">
-        <h1 class="caption">Доставка любимого мороженого на дом</h1>
-        <p class="desc-delivery">
-          Хочется полакомиться любимым дессертом, но нет времени съездить в магазин? Закажите доставку мороженого на дом
-          и курьер привезет вам ваш заказ в течение часа!
-        </p>
-      </section>
+
+    <section class="delivery">
+      <h2 class="caption">Доставка любимого мороженого на дом</h2>
+      <p class="desc-delivery">
+        Хочется полакомиться любимым дессертом, но нет времени съездить в магазин? Закажите доставку мороженого на дом
+        и курьер привезет вам ваш заказ в течение часа!
+      </p>
       <section class="modal">
-        <h1 class="visibility-hidden">заявка на доставку</h1>
+        <h2 class="visibility-hidden">заявка на доставку</h2>
         <p>Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
-        <form action="#" method="post">
-          <label for="date">Дата</label>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <label for="date" placeholder="01.04.2020">Дата</label>
           <input type="date" name="date">
           <label class="write-tel"><span>Телефон</span>
             <input type="text" name="telephone" placeholder="+7 800 999-00-00"></label>
@@ -220,13 +233,13 @@
           <button class="btn-send" type="submit">Отправить</button>
         </form>
       </section>
-    </div>
+    </section>
     <section class="contacts">
-      <h1 class="visibility-hidden">Контакты</h1>
+      <h2 class="visibility-hidden">Контакты</h2>
       <h3 class="subtitle-contacts">
         Адрес главного офиса и офлайн-магазина:
       </h3>
-      <div class="address">наб. Реки Карповки, 5 лит П, Санкт-Петербург</div>
+      <p class="address">наб. Реки Карповки, 5 лит П, Санкт-Петербург</p>
       <p class="text-info">Для заказов по телефону:</p>
       <div class="telephone">
         <a href="tel:+78128121212">+7 (812) 812-12-12</a>
@@ -243,13 +256,15 @@
       <h2 class="visibility-hidden">Мы в социальных сетях</h2>
       <ul class="list-icons">
         <li class="vk">
-          <a href="#" target="_blank"><span class="visibility-hidden">вконтакте</span></a>
+          <a href="https://vk.com/htmlacademy" target="_blank"><span class="visibility-hidden">вконтакте</span></a>
         </li>
         <li class="fb">
-          <a href="#" target="_blank"><span class="visibility-hidden">фейсбук</span></a>
+          <a href="https://www.facebook.com/htmlacademy" target="_blank"><span
+              class="visibility-hidden">фейсбук</span></a>
         </li>
         <li class="ig">
-          <a href="#" target="_blank"><span class="visibility-hidden">инстаграмм</span></a>
+          <a href="https://www.instagram.com/htmlacademy/" target="_blank"><span
+              class="visibility-hidden">инстаграмм</span></a>
         </li>
       </ul>
     </div>
@@ -270,8 +285,8 @@
       </ul>
     </section>
     <section class="footer-copyright">
-      <img class="logo-header" src="#" alt="Логотип html academy">
-      <p>Сделано в <a class="footer-link" href="#">.html academy</a> &copy; 2021</p>
+      <img class="logo-header" src="https://htmlacademy.ru/" alt="Логотип html academy">
+      <p>Сделано в <a class="footer-link" href="https://htmlacademy.ru/">.html academy</a> &copy; 2021</p>
     </section>
   </footer>
   <!-- //подвал-->

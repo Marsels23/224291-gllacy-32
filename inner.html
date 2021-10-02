@@ -26,7 +26,7 @@
         <a href="tel:+78005558628">+7 800 555 86 28</a>
       </div>
       <section class="user-menu">
-        <form action="#" method="get">
+        <form action="https://echo.htmlacademy.ru" method="get">
           <fieldset class="search">
             <legend class="visibility-hidden">Форма поиска</legend>
             <label class="label-search" for="search">
@@ -49,6 +49,7 @@
 
   <!-- основное содержимое страницы -->
   <main class="main-index">
+    <h1 class="visibility-hidden">Каталог</h1>
     <section class="breadcrumbs">
       <span class="visibility-hidden">навигация по страницам</span>
       <ul class="nav-page">
@@ -63,30 +64,33 @@
         </li>
       </ul>
     </section>
-    <h1 class="title-catalog">Сливочное мороженое</h1>
+    <h2 class="title-catalog">Сливочное мороженое</h2>
     <div class="filters">
-<fotm class="options" action="#" method="get">
-  <p class="filter-title">Сортировка:</p>
-  <select name="variants">
-    <optgroup label="sort">
-      <option value="popular">По популярности</option>
-    </optgroup>
-    <div class="detail">
-   <label for="price-options">Цена: 100 ₽ – 500 ₽</label>
-       <input type="range" id="price-options" name="dayscount" min="100" max="500">
-    </div >
-    <fieldset>
-      <legend class="filter-title">Наполнители:</legend>
-      <div class="container-buttons">
-        <input id="chocolate" type="checkbox" name="sugar" value="chocolate" checked><label for="chocolate">шоколадные</label>
-        <input id="sugar" type="checkbox" name="sugar" value="sugar" checked><label for="sugar">сахарные присыпки</label>
-        <input id="fruit" type="checkbox" name="sugar" value="fruit"><label for="fruit">фрукты</label>
-        <input id="syrop" type="checkbox" name="sugar" value="syrop"><label for="syrop">сиропы</label>
-        <input id="jam" type="checkbox" name="sugar" value="jam"><label for="jam">джемы</label>
-      </div>
-    </fieldset>
-    <input class="btn-filter" type="submit" value="Применить">
-</fotm>
+      <select name="variants">
+      <form class="options" action="https://echo.htmlacademy.ru" method="get">
+        <p class="filter-title">Сортировка:</p>
+          <optgroup label="sort">
+            <option value="popular">По популярности</option>
+          </optgroup>
+        </select>
+        <div class="detail">
+          <label for="price-options">Цена: 100 ₽ – 500 ₽</label>
+          <input type="range" id="price-options" name="dayscount" min="100" max="500">
+        </div>
+        <fieldset>
+          <legend class="filter-title">Наполнители:</legend>
+          <div class="container-buttons">
+            <input id="chocolate" type="checkbox" name="sugar" value="chocolate" checked><label
+              for="chocolate">шоколадные</label>
+            <input id="sugar" type="checkbox" name="sugar" value="sugar" checked><label for="sugar">сахарные
+              присыпки</label>
+            <input id="fruit" type="checkbox" name="sugar" value="fruit"><label for="fruit">фрукты</label>
+            <input id="syrop" type="checkbox" name="sugar" value="syrop"><label for="syrop">сиропы</label>
+            <input id="jam" type="checkbox" name="sugar" value="jam"><label for="jam">джемы</label>
+          </div>
+        </fieldset>
+        <button class="btn-filter" type="submit">Применить</button>
+        </form>
     </div>
 
     <section class="tool-cards">
@@ -115,7 +119,7 @@
         <h2 class="ice-cream-name">Черника</h2>
         <p class="desc">
           Крем-брюле
-с черничным джемом
+          с черничным джемом
         </p>
         <p class="price">330 ₽/кг</p>
         <a class="visibility-hidden buy-btn" href="#">Купить</a>
@@ -146,7 +150,7 @@
         <h2 class="ice-cream-name">Банан</h2>
         <p class="desc">
           Сливочный пломбир
-с банановым вкусом
+          с банановым вкусом
         </p>
         <p class="price">340 ₽/кг</p>
         <a class="visibility-hidden buy-btn" href="#">Купить</a>
@@ -167,7 +171,7 @@
         <h2 class="ice-cream-name">Клубничка</h2>
         <p class="desc">
           Сливочный пломбир
-с клубничным вкусом
+          с клубничным вкусом
         </p>
         <p class="price">300 ₽/кг</p>
         <a class="visibility-hidden buy-btn" href="#">Купить</a>
@@ -188,7 +192,7 @@
         <h2 class="ice-cream-name">Ментол</h2>
         <p class="desc">
           Сливочный пломбир
-с ментоловым сиропом
+          с ментоловым сиропом
         </p>
         <p class="price">320 ₽/кг</p>
         <a class="visibility-hidden buy-btn" href="#">Купить</a>
@@ -223,13 +227,15 @@
       <h2 class="visibility-hidden">Мы в социальных сетях</h2>
       <ul class="list-icons">
         <li class="vk">
-          <a href="#" target="_blank"><span class="visibility-hidden">вконтакте</span></a>
+          <a href="https://vk.com/htmlacademy" target="_blank"><span class="visibility-hidden">вконтакте</span></a>
         </li>
         <li class="fb">
-          <a href="#" target="_blank"><span class="visibility-hidden">фейсбук</span></a>
+          <a href="https://www.facebook.com/htmlacademy" target="_blank"><span
+              class="visibility-hidden">фейсбук</span></a>
         </li>
         <li class="ig">
-          <a href="#" target="_blank"><span class="visibility-hidden">инстаграмм</span></a>
+          <a href="https://www.instagram.com/htmlacademy/" target="_blank"><span
+              class="visibility-hidden">инстаграмм</span></a>
         </li>
       </ul>
     </div>
@@ -250,8 +256,8 @@
       </ul>
     </section>
     <section class="footer-copyright">
-      <img class="logo-header" src="#" alt="Логотип html academy">
-      <p>Сделано в <a class="footer-link" href="#">.html academy</a> &copy; 2021</p>
+      <img class="logo-header" src="https://htmlacademy.ru/" alt="Логотип html academy">
+      <p>Сделано в <a class="footer-link" href="https://htmlacademy.ru/">.html academy</a> &copy; 2021</p>
     </section>
   </footer>
   <!-- //подвал-->
