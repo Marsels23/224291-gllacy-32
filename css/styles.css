@@ -21,3 +21,32 @@ font-weight: 900;
 src: url("fonts/inter-900.woff2") format("woff2");
 font-display: swap;
 }
+
+body {
+  background-color: #FEAFC3;
+}
+
+.info-company {
+  background-image: url("../img/background/wafer.png");
+  background-repeat: no-repeat;
+}
+
+.blog-wrapper {
+  background-image: url("../img/background/background-serving.jpg");
+  background-repeat: no-repeat;
+}
+
+.subscribe {
+  background-image: url("../img/background/background-mail.png");
+  background-repeat: no-repeat;
+}
+
+.delivery {
+    background-image: url("../img/background/background-delivery.png");
+    background-repeat: no-repeat;
+}
+
+.contacts {
+  background-image: url("../img/background/background-contacts.png");
+  background-repeat: no-repeat;
+}

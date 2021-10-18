@@ -12,7 +12,7 @@
 <body>
   <!-- Шапка -->
   <header class="page-header">
-    <img class="logo-header" src="img/icons/logo.svg" alt="Логотип Глейси">
+    <img class="logo-header" src="img/icons/logo.svg" width="137" height="56" alt="Логотип Глейси">
     <nav class="navigation-site">
       <ul class="navigation-list">
         <li class="navigation-item">
@@ -63,7 +63,7 @@
           Натуральное мороженое из свежих сливок
           и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи.
         </p>
-        <img src="img/content/ice-cream-1.jpg" alt="пломбир с клубничным джемом">
+        <img src="img/content/ice-cream-1.png" width="306" height="507" alt="пломбир с клубничным джемом">
         <a class="btn-get">Заказать</a>
       </article>
       <article class="current-slider">
@@ -74,7 +74,7 @@
           Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и наслаждение даже в самый жаркий летний
           день.
         </p>
-        <img src="img/content/ice-cream-2.png" alt="Сливочное мороженое со вкусом банана">
+        <img src="img/content/ice-cream-2.png" width="306" height="507" alt="Сливочное мороженое со вкусом банана">
         <a class="btn-get">Заказать</a>
       </article>
       <article class="current-slider">
@@ -84,7 +84,7 @@
         <p class="description">
           Необычный сладкий дессерт с карамельный топпингом и кусочками зефира завоюет сердца сладкоежек всех возрастов.
         </p>
-        <img src="img/content/ice-cream-3.jpg" alt="Карамельный пломбир с маршмеллоу">
+        <img src="img/content/ice-cream-3.png" width="306" height="507" alt="Карамельный пломбир с маршмеллоу">
         <a class="btn-get">Заказать</a>
       </article>
       <button class="arrow arrow-left" aria-label="листать влево"></button>
@@ -136,7 +136,7 @@
     <section class="popular">
       <h2 class="advice">Попробуйте самые популярные вкусы нашего мороженого</h2>
       <article class="product-card">
-        <img class="product-photo" src="#" alt="Малинка">
+        <img class="product-photo" src="img/cards/raspberries-ice.png" width="168" height="168" alt="Малинка">
         <h3 class="ice-cream-name">Малинка</h3>
         <p class="desc">
           Сливочное мороженое с малиновым джемом
@@ -146,7 +146,7 @@
       </article>
 
       <article class="product-card">
-        <img class="product-photo" src="#" alt="Фисташка">
+        <img class="product-photo" src="img/cards/pistachio-ice.png" width="168" height="168" alt="Фисташка">
         <h3 class="ice-cream-name">Фисташка</h3>
         <p class="desc">
           Фисташковый пломбир с кусочками шоколада
@@ -156,7 +156,7 @@
       </article>
 
       <article class="product-card">
-        <img class="product-photo" src="#" alt="Черника">
+        <img class="product-photo" src="img/cards/blueberry-ice.png" width="168" height="168" alt="Черника">
         <h3 class="ice-cream-name">Черника</h3>
         <p class="desc">
           Крем-брюле с черничным джемом
@@ -166,16 +166,17 @@
       </article>
 
       <article class="product-card">
-        <img class="product-photo" src="#" alt="Бабл-гам">
+        <img class="product-photo" src="img/cards/buble-gum.png" width="168" height="168" alt="Бабл-гам">
         <h3 class="ice-cream-name">Бабл-гам</h3>
         <p class="desc">
           Ванильный пломбир со сладкой посыпкой
         </p>
         <p class="price">320 ₽/кг</p>
-        <a class="buy-btn href=" #">Купить</a>
+        <a class="buy-btn" href="#">Купить</a>
       </article>
     </section>
     <section class="info-company">
+      <div class="substrate">
       <h2>Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного проиводства на развес</h2>
       <ul class="advantages-list">
         <li class="advantages-item">Все наше мороженое изгатавливается на собственном производстве, с использованием
@@ -189,8 +190,10 @@
         <li class="advantages-item">Доставка нашего мороженого осуществляется в специальном термопаке, который не дает
           мороженому растаять и позволяет сохранить превосходный вкус.</li>
       </ul>
+    </div>
     </section>
     <a class="blog-link">
+      <div class="blog-wrapper">
       <article class="blogging">
         <p class="new">
           Новое в нашем блоге
@@ -200,6 +203,7 @@
           к столу
         </h2>
       </article>
+    </div>
     </a>
     <section class="subscribe">
       <h2 class="visibility-hidden">Форма подписки</h2>
@@ -213,7 +217,7 @@
           <input id="email" type="email" name="email" required placeholder="email@example.com"><label
             for="email">Электронная почта</label>
         </div>
-        <input class="btn" type="submit" value="Отправить">
+        <button class="btn-send" type="submit">Отправить</button>
       </form>
     </section>
 
@@ -227,8 +231,8 @@
         <h2 class="visibility-hidden">заявка на доставку</h2>
         <p>Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
         <form action="https://echo.htmlacademy.ru" method="post">
-          <label for="date" placeholder="01.04.2020">Дата</label>
-          <input type="date" name="date">
+          <label for="date">Дата</label>
+          <input id="date" type="date" name="date" value="2020-04-01">
           <label class="write-tel"><span>Телефон</span>
             <input type="text" name="telephone" placeholder="+7 800 999-00-00"></label>
           <label class="write-e-mail"><span>Адрес</span>
@@ -244,9 +248,9 @@
       </p>
       <p class="address">наб. Реки Карповки, 5 лит П, Санкт-Петербург</p>
       <p class="text-info">Для заказов по телефону:</p>
-      <div class="telephone">
+     
         <a href="tel:+78128121212">+7 (812) 812-12-12</a>
-      </div>
+      
       <p class="text-info">(с 10 до 20 ежедневно)</p>
       <a class="btn-feedback" href="#">Форма обратной связи</a>
     </section>
@@ -289,7 +293,7 @@
     </section>
     <section class="footer-copyright">
       <a href="https://htmlacademy.ru/">
-        <img class="logo-header" src="https://htmlacademy.ru/" alt="Логотип html academy">
+        <img class="logo-header" src="img/icons/logo_htmlacademy.svg" width="93" height="27" alt="Логотип html academy">
       </a>
       <p>Сделано в <a class="footer-link" href="https://htmlacademy.ru/">.html academy</a> &copy; 2021</p>
     </section>
