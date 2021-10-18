@@ -15,15 +15,129 @@
 }
 
 @font-face {
-font-family: "Inter";
-font-style: normal;
-font-weight: 900;
-src: url("fonts/inter-900.woff2") format("woff2");
-font-display: swap;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  src: url("fonts/inter-900.woff2") format("woff2");
+  font-display: swap;
 }
 
 body {
   background-color: #FEAFC3;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: #2D3440;
+}
+
+.navigation-link {
+  text-decoration: none;
+  color: #2D3440;
+  line-height: 20px;
+}
+
+.telephone-link {
+  text-decoration: none;
+  color: #2D3440;
+  line-height: 20px;
+  font-weight: bold;
+}
+
+.navigation-user,
+.navigation-list {
+  list-style-type: none;
+}
+
+.product-name {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 46px;
+}
+
+.description {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.base-title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+}
+
+.title-cards {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.btn-gift,
+.btn-get {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  color: #2D3440;
+}
+
+.ice-cream-name {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.content {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.btn-send {
+  background-color: #FF2F64;
+  color: white;
+  line-height: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.address {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.phone-link {
+  text-decoration: none;
+  color: #2D3440;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.list-other,
+.list-icons {
+  list-style-type: none;
+}
+
+.aside-link {
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: none;
+  color: #2D3440;
+}
+
+.active {
+  font-weight: bold;
+}
+
+.author {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.footer-link {
+  font-size: 12px;
+  line-height: 16px;
+  text-decoration: none;
+  color: #2D3440;
 }
 
 .info-company {
@@ -42,8 +156,8 @@ body {
 }
 
 .delivery {
-    background-image: url("../img/background/background-delivery.png");
-    background-repeat: no-repeat;
+  background-image: url("../img/background/background-delivery.png");
+  background-repeat: no-repeat;
 }
 
 .contacts {
