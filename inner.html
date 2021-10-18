@@ -4,12 +4,13 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Глейси</title>
+  <link href="css/styles.css" rel="stylesheet">
 </head>
 
 <body>
   <!-- Шапка -->
   <header class="page-header">
-    <img class="logo-header" src="#" alt="Логотип Глейси">
+    <img class="logo-header" src="img/icons/logo.svg" width="137" height="56" alt="Логотип Глейси">
     <nav class="navigation-site">
       <ul class="navigation-list">
         <li class="navigation-item">
@@ -51,7 +52,7 @@
   <main class="main-index">
     <h1 class="visibility-hidden">Каталог</h1>
     <section class="breadcrumbs">
-      <span class="visibility-hidden">навигация по страницам</span>
+      <h2 class="visibility-hidden">навигация по страницам</h2>
       <ul class="nav-page">
         <li>
           <a href="index.html">главная</a>
@@ -66,36 +67,40 @@
     </section>
     <h2 class="title-catalog">Сливочное мороженое</h2>
     <div class="filters">
-      <select name="variants">
-      <form class="options" action="https://echo.htmlacademy.ru" method="get">
-        <p class="filter-title">Сортировка:</p>
+      <h2 class="visibility-hidden">Фильтры</h2>
+     
+        <form class="options" action="https://echo.htmlacademy.ru" method="get">
+          <p class="filter-title">Сортировка:</p>
+          <select name="variants">
           <optgroup label="sort">
             <option value="popular">По популярности</option>
           </optgroup>
-        </select>
-        <div class="detail">
-          <label for="price-options">Цена: 100 ₽ – 500 ₽</label>
-          <input type="range" id="price-options" name="dayscount" min="100" max="500">
-        </div>
-        <fieldset>
-          <legend class="filter-title">Наполнители:</legend>
-          <div class="container-buttons">
-            <input id="chocolate" type="checkbox" name="sugar" value="chocolate" checked><label
-              for="chocolate">шоколадные</label>
-            <input id="sugar" type="checkbox" name="sugar" value="sugar" checked><label for="sugar">сахарные
-              присыпки</label>
-            <input id="fruit" type="checkbox" name="sugar" value="fruit"><label for="fruit">фрукты</label>
-            <input id="syrop" type="checkbox" name="sugar" value="syrop"><label for="syrop">сиропы</label>
-            <input id="jam" type="checkbox" name="sugar" value="jam"><label for="jam">джемы</label>
+          </select>
+          <div class="detail">
+            <label for="price-options">Цена: 100 ₽ – 500 ₽</label>
+            <input type="range" id="price-options" name="dayscount" min="100" max="500">
           </div>
-        </fieldset>
-        <button class="btn-filter" type="submit">Применить</button>
+          <fieldset>
+            <legend class="filter-title">Наполнители:</legend>
+            <div class="container-buttons">
+              <input id="chocolate" type="checkbox" name="sugar" value="chocolate" checked><label
+                for="chocolate">шоколадные</label>
+              <input id="sugar" type="checkbox" name="sugar" value="sugar" checked><label for="sugar">сахарные
+                присыпки</label>
+              <input id="fruit" type="checkbox" name="sugar" value="fruit"><label for="fruit">фрукты</label>
+              <input id="syrop" type="checkbox" name="sugar" value="syrop"><label for="syrop">сиропы</label>
+              <input id="jam" type="checkbox" name="sugar" value="jam"><label for="jam">джемы</label>
+            </div>
+          </fieldset>
+          <button class="btn-filter" type="submit">Применить</button>
         </form>
+     
     </div>
 
     <section class="tool-cards">
+      <h2 class="visibility-hidden">Карточки товаров</h2>
       <article class="product-card">
-        <img class="product-photo" src="#" alt="Малинка">
+        <img class="product-photo" src="img/cards/raspberries-ice.png" width="168" height="168" alt="Малинка">
         <h2 class="ice-cream-name">Малинка</h2>
         <p class="desc">
           Сливочное мороженое с малиновым джемом
@@ -105,7 +110,7 @@
       </article>
 
       <article class="product-card">
-        <img class="product-photo" src="#" alt="Фисташка">
+        <img class="product-photo" src="img/cards/pistachio-ice.png" width="168" height="168" alt="Фисташка">
         <h2 class="ice-cream-name">Фисташка</h2>
         <p class="desc">
           Фисташковый пломбир с кусочками шоколада
@@ -115,7 +120,7 @@
       </article>
 
       <article class="product-card">
-        <img class="product-photo" src="#" alt="Черника">
+        <img class="product-photo" src="img/cards/blueberry-ice.png" width="168" height="168" alt="Черника">
         <h2 class="ice-cream-name">Черника</h2>
         <p class="desc">
           Крем-брюле
@@ -126,7 +131,7 @@
       </article>
 
       <article class="product-card">
-        <img class="product-photo" src="#" alt="Бабл-гам">
+        <img class="product-photo" src="img/cards/buble-gum.png" width="168" height="168" alt="Бабл-гам">
         <h2 class="ice-cream-name">Бабл-гам</h2>
         <p class="desc">
           Ванильный пломбир со сладкой посыпкой
@@ -136,7 +141,7 @@
       </article>
 
       <article class="product-card">
-        <img class="product-photo" src="#" alt="Ежевика">
+        <img class="product-photo" src="img/cards/blackberry.png" width="168" height="168" alt="Ежевика">
         <h2 class="ice-cream-name">Ежевика</h2>
         <p class="desc">
           Сливочное мороженое с ежевичным джемом
@@ -146,7 +151,7 @@
       </article>
 
       <article class="product-card">
-        <img class="product-photo" src="#" alt="Банан">
+        <img class="product-photo" src="img/cards/banana.png" width="168" height="168" alt="Банан">
         <h2 class="ice-cream-name">Банан</h2>
         <p class="desc">
           Сливочный пломбир
@@ -157,7 +162,7 @@
       </article>
 
       <article class="product-card">
-        <img class="product-photo" src="#" alt="Шоколадка">
+        <img class="product-photo" src="img/cards/chocolate.png" width="168" height="168" alt="Шоколадка">
         <h2 class="ice-cream-name">Шоколадка</h2>
         <p class="desc">
           Классический шоколадный пломбир
@@ -167,7 +172,7 @@
       </article>
 
       <article class="product-card">
-        <img class="product-photo" src="#" alt="Клубничка">
+        <img class="product-photo" src="img/cards/strawberry.png" width="168" height="168" alt="Клубничка">
         <h2 class="ice-cream-name">Клубничка</h2>
         <p class="desc">
           Сливочный пломбир
@@ -178,7 +183,7 @@
       </article>
 
       <article class="product-card">
-        <img class="product-photo" src="#" alt="Лимон">
+        <img class="product-photo" src="img/cards/lemon.png" width="168" height="168" alt="Лимон">
         <h2 class="ice-cream-name">Лимон</h2>
         <p class="desc">
           Освежающий лимонный сорбет
@@ -188,7 +193,7 @@
       </article>
 
       <article class="product-card">
-        <img class="product-photo" src="#" alt="Ментол">
+        <img class="product-photo" src="img/cards/menthol.png" width="168" height="168" alt="Ментол">
         <h2 class="ice-cream-name">Ментол</h2>
         <p class="desc">
           Сливочный пломбир
@@ -199,7 +204,7 @@
       </article>
 
       <article class="product-card">
-        <img class="product-photo" src="#" alt="Орешек">
+        <img class="product-photo" src="img/cards/nut.png" width="168" height="168" alt="Орешек">
         <h2 class="ice-cream-name">Орешек</h2>
         <p class="desc">
           Фисташковый пломбир с шоколадным сиропом
@@ -209,7 +214,7 @@
       </article>
 
       <article class="product-card">
-        <img class="product-photo" src="#" alt="Крем-брюле">
+        <img class="product-photo" src="img/cards/brulee.png" width="168" height="168" alt="Крем-брюле">
         <h2 class="ice-cream-name">Крем-брюле</h2>
         <p class="desc">
           Классическое крем-брюле
@@ -217,6 +222,7 @@
         <p class="price">280 ₽/кг</p>
         <a class="visibility-hidden buy-btn" href="#">Купить</a>
       </article>
+      <button class="btn-show-more" type="submit">Отправить</button>
     </section>
   </main>
   <!-- //основное содержимое страницы -->
@@ -256,7 +262,7 @@
       </ul>
     </section>
     <section class="footer-copyright">
-      <img class="logo-header" src="https://htmlacademy.ru/" alt="Логотип html academy">
+      <img class="logo-header" src="img/icons/logo_htmlacademy.svg" width="93" height="27" alt="Логотип html academy">
       <p>Сделано в <a class="footer-link" href="https://htmlacademy.ru/">.html academy</a> &copy; 2021</p>
     </section>
   </footer>
