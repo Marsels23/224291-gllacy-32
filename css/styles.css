@@ -78,6 +78,7 @@ body {
   line-height: 20px;
   text-decoration: none;
   color: #2D3440;
+  background-color: #FCFCFC;
 }
 
 .ice-cream-name {
@@ -86,23 +87,68 @@ body {
   font-weight: 700;
 }
 
+.product-card {
+  background-color: #FCFCFC;
+}
+
+.desc {
+  color: #565C66;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.new {
+  line-height: 20px;
+  color: #565C66;
+}
+
+.text-delivery {
+  color: #565C66;
+
+}
+
+.newsletter {
+  color: #565C66;
+}
+
 .content {
   font-size: 24px;
   line-height: 30px;
+}
+
+.subtitle-contacts {
+  color: #565C66;
 }
 
 .btn-send {
   background-color: #FF2F64;
   color: white;
   line-height: 20px;
-  font-weight: bold;
   text-decoration: none;
+}
+
+.write-date,
+.write-tel,
+.write-e-mail {
+  font-weight: bold;
+  line-height: 20px;
+  color: #2D3440;
 }
 
 .address {
   font-size: 20px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.text-info {
+  font-size: 14px;
   line-height: 20px;
-  font-weight: 700;
+  color: #565C66;
 }
 
 .phone-link {
@@ -151,8 +197,9 @@ body {
 }
 
 .subscribe {
-  background-image: url("../img/background/background-mail.png");
-  background-repeat: no-repeat;
+  border: 6px solid red;
+  border-image: url("../img/background/background-mail.png") 6;
+  background-color: #FCFCFC;
 }
 
 .delivery {
@@ -163,4 +210,45 @@ body {
 .contacts {
   background-image: url("../img/background/background-contacts.png");
   background-repeat: no-repeat;
+}
+
+/* страница каталога */
+
+.title-catalog {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  color: #2D3440;
+}
+
+.nav-page a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2D3440;
+}
+
+.nav-page li {
+  list-style-type: none;
+}
+
+.options {
+  font-size: 14px;
+  line-height: 20px;
+  color: #2D3440;
+}
+
+.btn-filter {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2D3440;
+  background-color: #FEC7D5;
+}
+
+.btn-show-more {
+  color: #2D3440;
+  background-color: #FCFCFC;
+  line-height: 20px;
 }
