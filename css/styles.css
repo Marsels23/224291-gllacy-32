@@ -15,15 +15,175 @@
 }
 
 @font-face {
-font-family: "Inter";
-font-style: normal;
-font-weight: 900;
-src: url("fonts/inter-900.woff2") format("woff2");
-font-display: swap;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  src: url("fonts/inter-900.woff2") format("woff2");
+  font-display: swap;
 }
 
 body {
   background-color: #FEAFC3;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: #2D3440;
+}
+
+.navigation-link {
+  text-decoration: none;
+  color: #2D3440;
+  line-height: 20px;
+}
+
+.telephone-link {
+  text-decoration: none;
+  color: #2D3440;
+  line-height: 20px;
+  font-weight: bold;
+}
+
+.navigation-user,
+.navigation-list {
+  list-style-type: none;
+}
+
+.product-name {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 46px;
+}
+
+.description {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.base-title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+}
+
+.title-cards {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.btn-gift,
+.btn-get {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  color: #2D3440;
+  background-color: #FCFCFC;
+}
+
+.ice-cream-name {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.product-card {
+  background-color: #FCFCFC;
+}
+
+.desc {
+  color: #565C66;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.new {
+  line-height: 20px;
+  color: #565C66;
+}
+
+.text-delivery {
+  color: #565C66;
+
+}
+
+.newsletter {
+  color: #565C66;
+}
+
+.content {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.subtitle-contacts {
+  color: #565C66;
+}
+
+.btn-send {
+  background-color: #FF2F64;
+  color: white;
+  line-height: 20px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.write-date,
+.write-tel,
+.write-e-mail {
+  font-weight: bold;
+  line-height: 20px;
+}
+
+.address {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.text-info {
+  font-size: 14px;
+  line-height: 20px;
+  color: #565C66;
+}
+
+.phone-link {
+  text-decoration: none;
+  color: #2D3440;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.list-other,
+.list-icons {
+  list-style-type: none;
+}
+
+.aside-link {
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: none;
+  color: #2D3440;
+}
+
+.active {
+  font-weight: bold;
+}
+
+.author {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.footer-link {
+  font-size: 12px;
+  line-height: 16px;
+  text-decoration: none;
+  color: #2D3440;
 }
 
 .info-company {
@@ -37,16 +197,79 @@ body {
 }
 
 .subscribe {
-  background-image: url("../img/background/background-mail.png");
-  background-repeat: no-repeat;
+  border: 6px solid red;
+  border-image: url("../img/background/background-mail.png") 6;
+  background-color: #FCFCFC;
 }
 
 .delivery {
-    background-image: url("../img/background/background-delivery.png");
-    background-repeat: no-repeat;
+  background-image: url("../img/background/background-delivery.png");
+  background-repeat: no-repeat;
 }
 
 .contacts {
   background-image: url("../img/background/background-contacts.png");
   background-repeat: no-repeat;
+}
+
+/* страница каталога */
+
+.title-catalog {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  color: #2D3440;
+}
+
+.nav-page a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2D3440;
+}
+
+.nav-page li {
+  list-style-type: none;
+}
+
+.options {
+  font-size: 14px;
+  line-height: 20px;
+  color: #2D3440;
+}
+
+.btn-filter {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2D3440;
+  background-color: #FEC7D5;
+}
+
+.btn-show-more {
+  color: #2D3440;
+  background-color: #FCFCFC;
+  line-height: 20px;
+}
+
+.btn-login,
+.btn-basket,
+.btn-basket-inner {
+  font-size: 14px;
+  line-height: 20px;
+  color: #2D3440;
+  text-decoration: none;
+}
+
+.paginator-item,
+.filters-item {
+  list-style-type: none;
+}
+
+.paginator-link {
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 20px;
+  color: #2D3440;
 }
