@@ -24,7 +24,7 @@
         </li>
       </ul>
       <div class="telephone">
-        <a href="tel:+78005558628">+7 800 555 86 28</a>
+        <a class="telephone-link" href="tel:+78005558628">+7 800 555 86 28</a>
       </div>
       <section class="user-menu">
         <form action="https://echo.htmlacademy.ru" method="get">
@@ -40,7 +40,7 @@
             <a class="btn-login" href="#">Вход</a>
           </li>
           <li class="link-user">
-            <a class="btn-basket" href="#">Пусто</a>
+            <a class="btn-basket-inner" href="#">2 товара</a>
           </li>
         </ul>
       </section>
@@ -55,13 +55,13 @@
       <h2 class="visibility-hidden">навигация по страницам</h2>
       <ul class="nav-page">
         <li>
-          <a href="index.html">главная</a>
+          <a href="index.html">Главная</a>
         </li>
         <li>
-          <a href="#">каталог</a>
+          <a href="#">Каталог</a>
         </li>
         <li>
-          <a href="#">сливочное</a>
+          <a href="#">Сливочное</a>
         </li>
       </ul>
     </section>
@@ -80,6 +80,28 @@
           <label for="price-options">Цена: 100 ₽ – 500 ₽</label>
           <input type="range" id="price-options" name="dayscount" min="100" max="500">
         </div>
+        <fieldset>
+          <legend class="filter-title">Жирность:</legend>
+          <ul class="filters-list">
+            <li class="filters-item">
+              <input class="filters-input visually-hidden" type="radio" name="fatness" id="fatness-1" value="0">
+              <label for="fatness-1" class="radio-label">0%</label>
+            </li>
+            <li class="filters-item">
+              <input class="filters-input visually-hidden" type="radio" name="fatness" id="fatness-2" value="less 10"
+                checked>
+              <label for="fatness-2" class="radio-label">до 10%</label>
+            </li>
+            <li class="filters-item">
+              <input class="filters-input visually-hidden" type="radio" name="fatness" id="fatness-3" value="less 30">
+              <label for="fatness-3" class="radio-label">до 30%</label>
+            </li>
+            <li class="filters-item">
+              <input class="filters-input visually-hidden" type="radio" name="fatness" id="fatness-4" value="over 30">
+              <label for="fatness-4" class="radio-label">выше 30%</label>
+            </li>
+          </ul>
+        </fieldset>
         <fieldset>
           <legend class="filter-title">Наполнители:</legend>
           <div class="container-buttons">
@@ -223,6 +245,33 @@
         <a class="visibility-hidden buy-btn" href="#">Купить</a>
       </article>
       <button class="btn-show-more" type="submit">Показать еще</button>
+      <ul class="paginator">
+        <li class="paginator-item active">
+          <a class="paginator-link" href="#">
+            <span class="visually-hidden">Назад</span>
+          </a>
+        </li>
+        <li class="paginator-item">
+          <a class="paginator-link current" href="#">1</a>
+        </li>
+        <li class="paginator-item">
+          <a href="#" class="paginator-link">2</a>
+        </li>
+        <li class="paginator-item">
+          <a href="#" class="paginator-link">3</a>
+        </li>
+        <li class="paginator-item">
+          <a href="#" class="paginator-link">4</a>
+        </li>
+        <li class="paginator-item">
+          <a href="#" class="paginator-link">5</a>
+        </li>
+        <li class="paginator-item">
+          <a href="#" class="paginator-link last-page">
+            <span class="visually-hidden">Вперед</span>
+          </a>
+        </li>
+      </ul>
     </section>
   </main>
   <!-- //основное содержимое страницы -->

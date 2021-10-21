@@ -129,6 +129,7 @@ body {
   color: white;
   line-height: 20px;
   text-decoration: none;
+  font-size: 16px;
 }
 
 .write-date,
@@ -250,4 +251,25 @@ body {
   color: #2D3440;
   background-color: #FCFCFC;
   line-height: 20px;
+}
+
+.btn-login,
+.btn-basket,
+.btn-basket-inner {
+  font-size: 14px;
+  line-height: 20px;
+  color: #2D3440;
+  text-decoration: none;
+}
+
+.paginator-item,
+.filters-item {
+  list-style-type: none;
+}
+
+.paginator-link {
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 20px;
+  color: #2D3440;
 }
