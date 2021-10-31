@@ -51,50 +51,243 @@
   <!-- //Шапка -->
 
   <!-- основное содержимое страницы -->
-  <main class="main-index">
-    <h1 class="visibility-hidden">Интернет-магазин мороженого "Глейси"</h1>
-    <section class="slider">
-      <h2 class="visibility-hidden">Галерея продукции</h2>
-      <article class="current-slider">
-        <h3 class="product-name">
-          Нежный пломбир с клубничным джемом
-        </h3>
-        <p class="description">
-          Натуральное мороженое из свежих сливок
-          и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи.
-        </p>
-        <img src="img/content/ice-cream-1.png" width="306" height="507" alt="пломбир с клубничным джемом">
-        <a class="btn-get">Заказать</a>
-      </article>
-      <article class="current-slider">
-        <h3 class="product-name">
-          Сливочное мороженое со вкусом банана
-        </h3>
-        <p class="description">
-          Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и наслаждение даже в самый жаркий летний
-          день.
-        </p>
-        <img src="img/content/ice-cream-2.png" width="306" height="507" alt="Сливочное мороженое со вкусом банана">
-        <a class="btn-get">Заказать</a>
-      </article>
-      <article class="current-slider">
-        <h3 class="product-name">
-          Карамельный пломбир с маршмеллоу
-        </h3>
-        <p class="description">
-          Необычный сладкий дессерт с карамельный топпингом и кусочками зефира завоюет сердца сладкоежек всех возрастов.
-        </p>
-        <img src="img/content/ice-cream-3.png" width="306" height="507" alt="Карамельный пломбир с маршмеллоу">
-        <a href="#" class="btn-get">Заказать</a>
-      </article>
-      <button class="arrow arrow-left" aria-label="листать влево"></button>
-      <button class="arrow arrow-right" aria-label="листать вправо"></button>
-      <div class="slider-controls">
-        <button class="dot-page active" aria-label="первый слайд"></button>
-        <button class="dot-page" aria-label="второй слайд"></button>
-        <button class="dot-page" aria-label="третий слайд"></button>
+  <main class="main-container main-index">
+    <div class="page-container">
+      <h1 class="visibility-hidden">Интернет-магазин мороженого "Глейси"</h1>
+      <section class="slider">
+        <h2 class="visibility-hidden">Галерея продукции</h2>
+        <article class="current-slider">
+          <div class="slider-wrapper">
+            <h3 class="product-name">
+              Нежный пломбир с клубничным джемом
+            </h3>
+            <p class="description">
+              Натуральное мороженое из свежих сливок<br>
+              и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи.
+            </p>
+            <a class="btn-get">Заказать</a>
+          </div>
+          <img class="slider-img" src="img/content/ice-cream-1.png" width="306" height="507"
+            alt="пломбир с клубничным джемом">
 
+        </article>
+        <article class="current-slider">
+          <div class="slider-wrapper">
+            <h3 class="product-name">
+              Сливочное мороженое со вкусом банана
+            </h3>
+            <p class="description">
+              Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и наслаждение даже в самый жаркий летний
+              день.
+            </p>
+            <a class="btn-get">Заказать</a>
+          </div>
+          <img src="img/content/ice-cream-2.png" width="306" height="507" alt="Сливочное мороженое со вкусом банана">
+        </article>
+        <article class="current-slider">
+          <div class="slider-wrapper">
+            <h3 class="product-name">
+              Карамельный пломбир с маршмеллоу
+            </h3>
+            <p class="description">
+              Необычный сладкий дессерт с карамельный топпингом и кусочками зефира завоюет сердца сладкоежек всех
+              возрастов.
+            </p>
+            <a href="#" class="btn-get">Заказать</a>
+          </div>
+          <img src="img/content/ice-cream-3.png" width="306" height="507" alt="Карамельный пломбир с маршмеллоу">
+        </article>
+        <button class="arrow arrow-left" aria-label="листать влево"></button>
+        <button class="arrow arrow-right" aria-label="листать вправо"></button>
+        <div class="elements">
+          <div class="slider-controls">
+            <button class="dot-page active" aria-label="первый слайд"></button>
+            <button class="dot-page" aria-label="второй слайд"></button>
+            <button class="dot-page" aria-label="третий слайд"></button>
+
+          </div>
+          <div class="social-web">
+            <h2 class="visibility-hidden">Мы в социальных сетях</h2>
+            <ul class="list-icons">
+              <li class="vk">
+                <a href="https://vk.com/htmlacademy" target="_blank"><span
+                    class="visibility-hidden">вконтакте</span></a>
+              </li>
+              <li class="fb">
+                <a href="https://www.facebook.com/htmlacademy" target="_blank"><span
+                    class="visibility-hidden">фейсбук</span></a>
+              </li>
+              <li class="ig">
+                <a href="https://www.instagram.com/htmlacademy/" target="_blank"><span
+                    class="visibility-hidden">инстаграмм</span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="profit">
+        <h2 class="profit-title base-title">Заказывайте мороженое и получайте подарки!</h2>
+        <div class="profit-wrapper">
+          <article class="berries promo">
+            <h3 class="title-cards">
+              Малинка даром!
+            </h3>
+            <p class="conditions">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку маринового
+              варенья бесплатно.
+            </p>
+            <a href="#" class="btn-gift">Хочу подарок</a>
+          </article>
+          <article class="sweets promo">
+            <h3 class="title-cards">
+              Маршмеллоу даром!
+            </h3>
+            <p class="conditions">При покупке 2 кг пломбира, добавим в ваш заказ упаковку нежных зефирок совершенно
+              бесплатно.
+            </p>
+            <a href="#" class="btn-gift">Хочу подарок</a>
+          </article>
+        </div>
+      </section>
+      <section class="popular">
+        <h2 class="advice base-title">Попробуйте самые популярные вкусы нашего мороженого</h2>
+        <div class="popular-wrapper">
+          <article class="product-card">
+            <img class="product-photo" src="img/cards/raspberries-ice.png" width="168" height="168" alt="Малинка">
+            <h3 class="ice-cream-name">Малинка</h3>
+            <p class="desc">
+              Сливочное мороженое с малиновым джемом
+            </p>
+            <p class="price">310 ₽/кг</p>
+            <a class="buy-btn" href="#">Купить</a>
+          </article>
+
+          <article class="product-card">
+            <img class="product-photo" src="img/cards/pistachio-ice.png" width="168" height="168" alt="Фисташка">
+            <h3 class="ice-cream-name">Фисташка</h3>
+            <p class="desc">
+              Фисташковый пломбир с кусочками шоколада
+            </p>
+            <p class="price">340 ₽/кг</p>
+            <a class="buy-btn" href="#">Купить</a>
+          </article>
+
+          <article class="product-card">
+            <img class="product-photo" src="img/cards/blueberry-ice.png" width="168" height="168" alt="Черника">
+            <h3 class="ice-cream-name">Черника</h3>
+            <p class="desc">
+              Крем-брюле с черничным джемом
+            </p>
+            <p class="price">330 ₽/кг</p>
+            <a class="buy-btn" href="#">Купить</a>
+          </article>
+
+          <article class="product-card">
+            <img class="product-photo" src="img/cards/buble-gum.png" width="168" height="168" alt="Бабл-гам">
+            <h3 class="ice-cream-name">Бабл-гам</h3>
+            <p class="desc">
+              Ванильный пломбир со сладкой посыпкой
+            </p>
+            <p class="price">320 ₽/кг</p>
+            <a class="buy-btn" href="#">Купить</a>
+          </article>
+        </div>
+      </section>
+      <section class="info-company">
+        <div class="substrate">
+          <h2 class="base-title">Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного
+            проиводства на развес</h2>
+          <ul class="advantages-list">
+            <li class="advantages-item">Все наше мороженое изгатавливается на собственном производстве, с использованием
+              современного оборудования и проверенных временем технологий.</li>
+            <li class="advantages-item">Для приготовления мороженого используются сливки и молоко высочайшего качества.
+              Все
+              ингредиенты
+              и добавки произведены из натурального сырья.</li>
+            <li class="advantages-item">Закупка ингредиентов производится только
+              у проверенных фермерских хозяйств, с которыми
+              нас связывает долговременное сотрудничество.</li>
+            <li class="advantages-item">Доставка нашего мороженого осуществляется в специальном термопаке, который не
+              дает
+              мороженому растаять и позволяет сохранить превосходный вкус.</li>
+          </ul>
+        </div>
+      </section>
+      <div class="wrapper-content">
+        <a class="blog-link">
+          <div class="blog-wrapper">
+            <article class="blogging">
+              <p class="new">
+                Новое в нашем блоге
+              </p>
+              <h2 class="content">
+                10 способов сервировки фруктовых щербетов
+                к столу
+              </h2>
+            </article>
+          </div>
+        </a>
+        <section class="subscribe">
+          <h2 class="visibility-hidden">Форма подписки</h2>
+          <p class="newsletter">
+            Подпишитесь на нашу сладкую рассылку и будьте всегда
+            в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды.
+            Честно =)
+          </p>
+          <form action="https://echo.htmlacademy.ru" method="get">
+            <div class="input-field">
+              <input id="email" type="email" name="email" required placeholder="email@example.com"><label
+                for="email">Электронная почта</label>
+            </div>
+            <button class="btn-send" type="submit">Отправить</button>
+          </form>
+        </section>
       </div>
+
+      <section class="delivery">
+        <div class="delivery-wrapper">
+          <h2 class="caption ">Доставка любимого мороженого на дом</h2>
+          <p class="desc-delivery">
+            Хочется полакомиться любимым дессертом, но нет времени съездить в магазин? Закажите доставку мороженого на
+            дом
+            и курьер привезет вам ваш заказ в течение часа!
+          </p>
+        </div>
+        <section class="modal">
+          <h2 class="visibility-hidden">заявка на доставку</h2>
+          <p class="text-delivery">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <label class="write-date" for="date">Дата</label>
+            <input id="date" type="date" name="date" value="2020-04-01">
+            <label class="write-tel"><span>Телефон</span>
+              <input type="text" name="telephone" placeholder="+7 800 999-00-00"></label>
+            <label class="write-e-mail"><span>Адрес</span>
+              <input type="text" name="text" placeholder="ул. Большая Конюшенная, 19/8"></label>
+            <button class="btn-send" type="submit">Отправить</button>
+          </form>
+        </section>
+      </section>
+      <section class="contacts">
+        <div class="contacts-wrapper">
+          <h2 class="visibility-hidden">Контакты</h2>
+          <p class="subtitle-contacts">
+            Адрес главного офиса и офлайн-магазина:
+          </p>
+          <p class="address">наб. Реки Карповки, 5 лит П, Санкт-Петербург</p>
+          <p class="text-info">Для заказов по телефону:</p>
+
+          <a class="phone-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
+
+          <p class="text-info">(с 10 до 20 ежедневно)</p>
+          <a class="btn-feedback btn-send" href="#">Форма обратной связи</a>
+        </div>
+      </section>
+    </div>
+  </main>
+  <!-- //основное содержимое страницы -->
+
+  <!-- подвал -->
+  <footer class="page-footer">
+    <div class="footer-container">
       <div class="social-web">
         <h2 class="visibility-hidden">Мы в социальных сетях</h2>
         <ul class="list-icons">
@@ -111,195 +304,31 @@
           </li>
         </ul>
       </div>
-    </section>
-    <section class="profit">
-      <h2 class="profit-title base-title">Заказывайте мороженое и получайте подарки!</h2>
-      <article class="berries promo">
-        <h3 class="title-cards">
-          Малинка даром!
-        </h3>
-        <p class="conditions">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку маринового
-          варенья бесплатно.
-        </p>
-        <a href="#" class="btn-gift">Хочу подарок</a>
-      </article>
-      <article class="sweets promo">
-        <h3 class="title-cards">
-          Маршмеллоу даром!
-        </h3>
-        <p class="conditions">При покупке 2 кг пломбира, добавим в ваш заказ упаковку нежных зефирок совершенно
-          бесплатно.
-        </p>
-        <a href="#" class="btn-gift">Хочу подарок</a>
-      </article>
-    </section>
-    <section class="popular">
-      <h2 class="advice base-title">Попробуйте самые популярные вкусы нашего мороженого</h2>
-      <article class="product-card">
-        <img class="product-photo" src="img/cards/raspberries-ice.png" width="168" height="168" alt="Малинка">
-        <h3 class="ice-cream-name">Малинка</h3>
-        <p class="desc">
-          Сливочное мороженое с малиновым джемом
-        </p>
-        <p class="price">310 ₽/кг</p>
-        <a class="buy-btn" href="#">Купить</a>
-      </article>
-
-      <article class="product-card">
-        <img class="product-photo" src="img/cards/pistachio-ice.png" width="168" height="168" alt="Фисташка">
-        <h3 class="ice-cream-name">Фисташка</h3>
-        <p class="desc">
-          Фисташковый пломбир с кусочками шоколада
-        </p>
-        <p class="price">340 ₽/кг</p>
-        <a class="buy-btn" href="#">Купить</a>
-      </article>
-
-      <article class="product-card">
-        <img class="product-photo" src="img/cards/blueberry-ice.png" width="168" height="168" alt="Черника">
-        <h3 class="ice-cream-name">Черника</h3>
-        <p class="desc">
-          Крем-брюле с черничным джемом
-        </p>
-        <p class="price">330 ₽/кг</p>
-        <a class="buy-btn" href="#">Купить</a>
-      </article>
-
-      <article class="product-card">
-        <img class="product-photo" src="img/cards/buble-gum.png" width="168" height="168" alt="Бабл-гам">
-        <h3 class="ice-cream-name">Бабл-гам</h3>
-        <p class="desc">
-          Ванильный пломбир со сладкой посыпкой
-        </p>
-        <p class="price">320 ₽/кг</p>
-        <a class="buy-btn" href="#">Купить</a>
-      </article>
-    </section>
-    <section class="info-company">
-      <div class="substrate">
-        <h2 class="base-title">Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного
-          проиводства на развес</h2>
-        <ul class="advantages-list">
-          <li class="advantages-item">Все наше мороженое изгатавливается на собственном производстве, с использованием
-            современного оборудования и проверенных временем технологий.</li>
-          <li class="advantages-item">Для приготовления мороженого используются сливки и молоко высочайшего качества.
-            Все
-            ингредиенты
-            и добавки произведены из натурального сырья.</li>
-          <li class="advantages-item">Закупка ингредиентов производится только
-            у проверенных фермерских хозяйств, с которыми
-            нас связывает долговременное сотрудничество.</li>
-          <li class="advantages-item">Доставка нашего мороженого осуществляется в специальном термопаке, который не дает
-            мороженому растаять и позволяет сохранить превосходный вкус.</li>
+      <section class="aside">
+        <ul class="list-other">
+          <li class="item-other">
+            <a href="#" class="aside-link active">Для поставщиков</a>
+          </li>
+          <li class="item-other">
+            <a href="#" class="aside-link">Наши документы</a>
+          </li>
+          <li class="item-other">
+            <a href="#" class="aside-link">О производстве</a>
+          </li>
+          <li class="item-other">
+            <a href="#" class="aside-link">Экологические стандарты</a>
+          </li>
         </ul>
-      </div>
-    </section>
-    <a class="blog-link">
-      <div class="blog-wrapper">
-        <article class="blogging">
-          <p class="new">
-            Новое в нашем блоге
-          </p>
-          <h2 class="content">
-            10 способов сервировки фруктовых щербетов
-            к столу
-          </h2>
-        </article>
-      </div>
-    </a>
-    <section class="subscribe">
-      <h2 class="visibility-hidden">Форма подписки</h2>
-      <p class="newsletter">
-        Подпишитесь на нашу сладкую рассылку и будьте всегда
-        в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды.
-        Честно =)
-      </p>
-      <form action="https://echo.htmlacademy.ru" method="get">
-        <div class="input-field">
-          <input id="email" type="email" name="email" required placeholder="email@example.com"><label
-            for="email">Электронная почта</label>
-        </div>
-        <button class="btn-send" type="submit">Отправить</button>
-      </form>
-    </section>
-
-    <section class="delivery">
-      <h2 class="caption base-title">Доставка любимого мороженого на дом</h2>
-      <p class="desc-delivery">
-        Хочется полакомиться любимым дессертом, но нет времени съездить в магазин? Закажите доставку мороженого на дом
-        и курьер привезет вам ваш заказ в течение часа!
-      </p>
-      <section class="modal">
-        <h2 class="visibility-hidden">заявка на доставку</h2>
-        <p class="text-delivery">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <label class="write-date" for="date">Дата</label>
-          <input id="date" type="date" name="date" value="2020-04-01">
-          <label class="write-tel"><span>Телефон</span>
-            <input type="text" name="telephone" placeholder="+7 800 999-00-00"></label>
-          <label class="write-e-mail"><span>Адрес</span>
-            <input type="text" name="text" placeholder="ул. Большая Конюшенная, 19/8"></label>
-          <button class="btn-send" type="submit">Отправить</button>
-        </form>
       </section>
-    </section>
-    <section class="contacts">
-      <h2 class="visibility-hidden">Контакты</h2>
-      <p class="subtitle-contacts">
-        Адрес главного офиса и офлайн-магазина:
-      </p>
-      <p class="address">наб. Реки Карповки, 5 лит П, Санкт-Петербург</p>
-      <p class="text-info">Для заказов по телефону:</p>
-
-      <a class="phone-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
-
-      <p class="text-info">(с 10 до 20 ежедневно)</p>
-      <a class="btn-feedback btn-send" href="#">Форма обратной связи</a>
-    </section>
-  </main>
-  <!-- //основное содержимое страницы -->
-
-  <!-- подвал -->
-  <footer class="page-footer">
-    <div class="social-web">
-      <h2 class="visibility-hidden">Мы в социальных сетях</h2>
-      <ul class="list-icons">
-        <li class="vk">
-          <a href="https://vk.com/htmlacademy" target="_blank"><span class="visibility-hidden">вконтакте</span></a>
-        </li>
-        <li class="fb">
-          <a href="https://www.facebook.com/htmlacademy" target="_blank"><span
-              class="visibility-hidden">фейсбук</span></a>
-        </li>
-        <li class="ig">
-          <a href="https://www.instagram.com/htmlacademy/" target="_blank"><span
-              class="visibility-hidden">инстаграмм</span></a>
-        </li>
-      </ul>
+      <section class="footer-copyright">
+        <a href="https://htmlacademy.ru/">
+          <img class="logo-header" src="img/icons/logo_htmlacademy.svg" width="93" height="27"
+            alt="Логотип html academy">
+        </a>
+        <p class="author">Сделано в <a class="footer-link" href="https://htmlacademy.ru/">.html academy</a> &copy; 2021
+        </p>
+      </section>
     </div>
-    <section class="aside">
-      <ul class="list-other">
-        <li class="item-other">
-          <a href="#" class="aside-link active">Для поставщиков</a>
-        </li>
-        <li class="item-other">
-          <a href="#" class="aside-link">Наши документы</a>
-        </li>
-        <li class="item-other">
-          <a href="#" class="aside-link">О производстве</a>
-        </li>
-        <li class="item-other">
-          <a href="#" class="aside-link">Экологические стандарты</a>
-        </li>
-      </ul>
-    </section>
-    <section class="footer-copyright">
-      <a href="https://htmlacademy.ru/">
-        <img class="logo-header" src="img/icons/logo_htmlacademy.svg" width="93" height="27" alt="Логотип html academy">
-      </a>
-      <p class="author">Сделано в <a class="footer-link" href="https://htmlacademy.ru/">.html academy</a> &copy; 2021
-      </p>
-    </section>
   </footer>
   <!-- //подвал-->
 
