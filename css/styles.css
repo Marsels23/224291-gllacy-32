@@ -35,6 +35,18 @@ body {
   font-size: 16px;
   line-height: 22px;
   color: #2D3440;
+  min-height: 100%;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .main-container {
@@ -86,7 +98,8 @@ body {
 }
 
 .navigation-user,
-.navigation-list {
+.navigation-list,
+.advantages-item {
   list-style-type: none;
 }
 
@@ -166,6 +179,8 @@ body {
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: auto auto;
+  column-gap: 95px;
+  row-gap: 40px;
 }
 
 .advantages-item {
@@ -354,8 +369,6 @@ body {
   margin: 0 auto;
 }
 
-
-
 .blog-wrapper {
   background-image: url("../img/background/background-serving.jpg");
   background-repeat: no-repeat;
@@ -417,8 +430,11 @@ body {
 
 .nav-page {
   display: flex;
-  justify-content: flex-start;
   padding: 0;
+}
+
+.page-item {
+  margin-right: 28px;
 }
 
 .nav-page li {
@@ -440,10 +456,90 @@ body {
   background-color: #FEC7D5;
 }
 
+.filters-group {
+  display: flex;
+  flex-wrap: wrap;
+  width: 807px;
+}
+
+.sort-wrapper {
+  width: 196px;
+  margin-right: 24px;
+}
+
+.filter-title {
+  margin: 0;
+}
+
+.fatness,
+.excipients {
+  border: 0;
+  padding: 0;
+}
+
+.detail {
+  display: flex;
+  flex-direction: column;
+  margin-right: 24px;
+}
+
+.filters-list {
+  display: flex;
+  padding: 0;
+}
+
+.btn-filter {
+  background: rgba(252, 252, 252, 0.3);
+  border: 2px solid #FCFCFC;
+  border-radius: 20px;
+  padding: 8px 53px;
+}
+
+.variants {
+  padding-right: 45px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color: #FCFCFC;
+  opacity: 0.3;
+  border-radius: 20px;
+  color: #2D3440;
+}
+
+.container-buttons {
+  width: 596px;
+}
+
+.cards-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  column-gap: 30px;
+  row-gap: 40px;
+  margin-bottom: 57px;
+}
+
 .btn-show-more {
   color: #2D3440;
+  font-weight: bold;
   background-color: #FCFCFC;
   line-height: 20px;
+  display: block;
+  margin-right: 330px;
+  padding: 12px 32px;
+  background: #FCFCFC;
+  border: 4px solid rgba(252, 252, 252, 0.4);
+  box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
+  border-radius: 26px;
+}
+
+.paginator-item {
+  margin-right: 16px;
+  padding: 0;
+}
+
+.paginator-wrapper {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .btn-login,
@@ -453,6 +549,12 @@ body {
   line-height: 20px;
   color: #2D3440;
   text-decoration: none;
+}
+
+.paginator {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
 }
 
 .paginator-item,
@@ -465,4 +567,8 @@ body {
   font-size: 16px;
   line-height: 20px;
   color: #2D3440;
+}
+
+.tool-cards {
+  margin-bottom: 40px;
 }
