@@ -36,11 +36,11 @@
                   d="M1.91 7.25a5.33 5.33 0 1 1 10.67 0 5.33 5.33 0 0 1-10.67 0Zm9.56 5.16a6.67 6.67 0 1 1 .94-.94l2.8 2.8a.67.67 0 0 1-.94.95l-2.8-2.81Z"
                   fill="#2D3440" /></svg></span>
           </a>
-          <form action="https://echo.htmlacademy.ru" method="get">
-            <fieldset class="search">
+          <form class="search" action="https://echo.htmlacademy.ru" method="get">
+            <fieldset>
               <legend class="visually-hidden">Форма поиска</legend>
               <label class="label-search" for="search">
-                <input class="entry-field" type="search" name="search" id="search" placeholder="Поиск:">
+                <input class="entry-field" type="search" name="search" id="search" placeholder="Поиск по сайту:">
               </label>
             </fieldset>
           </form>
@@ -50,9 +50,28 @@
             <a class="btn-login navigation-link" href="#">
               <div class="at">Вход</div>
             </a>
+            <div class="entrance">
+              <form action="https://echo.htmlacademy.ru" method="get">
+                <p class="private">Личный кабинет</p>
+                <label class="login"><span class="visually-hidden">логин</span>
+                  <input type="text" name="login" placeholder="email@example.com"></label>
+                <label class="password"><span class="visually-hidden">пароль</span>
+                  <input type="email" name="password" placeholder="......"></label>
+                <div class="private-wrapper">
+                  <button class="btn-send" type="submit">Войти</button>
+                  <div class="link-wrapper">
+                    <a href="#">Забыли пароль?</a>
+                    <a href="#">Регистрация</a>
+                  </div>
+                </div>
+              </form>
+            </div>
           </li>
           <li class="link-user">
             <a class="btn-basket navigation-link" href="#">Пусто</a>
+            <div class="basket-text">
+              <p class="message">Ваша корзина пока пуста</p>
+            </div>
           </li>
         </ul>
       </section>
@@ -242,11 +261,15 @@
           <h2 class="base-title">Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного
             проиводства на развес</h2>
           <ul class="advantages-list">
-            <li class="advantages-item advantages-ice-cream">Все наше мороженое изгатавливается на собственном производстве, с использованием
+            <li class="advantages-item advantages-ice-cream">Все наше мороженое изгатавливается на собственном
+              производстве, с использованием
               современного оборудования и проверенных временем технологий.</li>
-            <li class="advantages-item advantages-cow">Закупка ингредиентов производится только<br> у проверенных фермерских хозяйств, с которыми<br>нас связывает долговременное сотрудничество.</li>
-            <li class="advantages-item advantages-leaf">Для приготовления мороженого используются сливки и молоко высочайшего качества. Все ингредиенты<br> и добавки произведены из натурального сырья.</li>
-            <li class="advantages-item advantages-thermometer">Доставка нашего мороженого осуществляется в специальном термопаке, который не
+            <li class="advantages-item advantages-cow">Закупка ингредиентов производится только<br> у проверенных
+              фермерских хозяйств, с которыми<br>нас связывает долговременное сотрудничество.</li>
+            <li class="advantages-item advantages-leaf">Для приготовления мороженого используются сливки и молоко
+              высочайшего качества. Все ингредиенты<br> и добавки произведены из натурального сырья.</li>
+            <li class="advantages-item advantages-thermometer">Доставка нашего мороженого осуществляется в специальном
+              термопаке, который не
               дает
               мороженому растаять и позволяет сохранить превосходный вкус.</li>
           </ul>
@@ -322,7 +345,7 @@
           <a class="phone-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
 
           <p class="text-info">(с 10 до 20 ежедневно)</p>
-          <a class="btn-feedback btn-send" href="#">Форма обратной связи</a>
+          <a class="btn-feedback btn-send write-us" href="#">Форма обратной связи</a>
         </div>
       </section>
     </div>
@@ -376,7 +399,22 @@
     </div>
   </footer>
   <!-- //подвал-->
-
+  <section class="pop-up write-us-modal">
+    <h1 class="visually-hidden">Форма обратной связи</h1>
+    <p class="feedback">
+      Мы обязательно ответим вам!
+    </p>
+    <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+      <label class="write-answer"><input type="text" name="first-last-name" placeholder="Имя и фамилия"></label>
+      <label class="write-answer"><input type="email" name="mail" placeholder="email@example.com"></label>
+      <div class="enter-text">
+        <label class="write-answer" for="letters-field"></label>
+        <textarea name="text" id="letters-field" placeholder="В свободной форме"></textarea>
+      </div>
+    </form>
+    <button class="btn-send btn-pop-up" type="submit">Отправить</button>
+    <button type="button" class="close-modal" aria-label="закрыть форму"></button>
+  </section>
 </body>
-
+<script src="js/modal.js"></script>
 </html>

@@ -14,7 +14,7 @@
     <nav class="navigation-site">
       <ul class="navigation-list">
         <li class="navigation-item">
-          <a class="navigation-link" href="#">Каталог</a>
+          <a class="navigation-link" href="inner.html">Каталог</a>
         </li>
         <li class="navigation-item">
           <a class="navigation-link" href="#">Доставка и оплата</a>
@@ -24,23 +24,78 @@
         </li>
       </ul>
       <div class="telephone">
-        <a class="telephone-link" href="tel:+78005558628">+7 800 555 86 28</a>
+        <a class="telephone-link" href="tel:+78005558628">+7 800 555-86-28</a>
       </div>
       <section class="user-menu">
-        <form action="https://echo.htmlacademy.ru" method="get">
-          <fieldset class="search">
-            <legend class="visibility-hidden">Форма поиска</legend>
-            <label class="label-search" for="search">
-              <input class="entry-field" type="search" name="search" id="search" placeholder="Поиск:">
-            </label>
-          </fieldset>
-        </form>
+        <div class="search-link">
+          <a href="#" class="link-icon">
+            <span class="search-icon"><svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M1.91 7.25a5.33 5.33 0 1 1 10.67 0 5.33 5.33 0 0 1-10.67 0Zm9.56 5.16a6.67 6.67 0 1 1 .94-.94l2.8 2.8a.67.67 0 0 1-.94.95l-2.8-2.81Z"
+                  fill="#2D3440" /></svg></span>
+          </a>
+          <form class="search" action="https://echo.htmlacademy.ru" method="get">
+            <fieldset>
+              <legend class="visually-hidden">Форма поиска</legend>
+              <label class="label-search" for="search">
+                <input class="entry-field" type="search" name="search" id="search" placeholder="Поиск по сайту:">
+              </label>
+            </fieldset>
+          </form>
+        </div>
         <ul class="navigation-user">
           <li class="link-user">
-            <a class="btn-login" href="#">Вход</a>
+            <a class="btn-login navigation-link" href="#">
+              <div class="at">Вход</div>
+            </a>
+            <div class="entrance">
+              <form action="https://echo.htmlacademy.ru" method="get">
+                <p class="private">Личный кабинет</p>
+                <label class="login"><span class="visually-hidden">логин</span>
+                  <input type="text" name="login" placeholder="email@example.com"></label>
+                <label class="password"><span class="visually-hidden">пароль</span>
+                  <input type="email" name="password" placeholder="......"></label>
+                <div class="private-wrapper">
+                  <button class="btn-send" type="submit">Войти</button>
+                  <div class="link-wrapper">
+                    <a href="#">Забыли пароль?</a>
+                    <a href="#">Регистрация</a>
+                  </div>
+                </div>
+              </form>
+            </div>
           </li>
           <li class="link-user">
-            <a class="btn-basket-inner" href="#">2 товара</a>
+            <a class="btn-basket-inner navigation-link" href="#">Пусто</a>
+            <div class="basket-text-inner">
+              <div class="basket-inner-wrapper">
+                <p class="title-basket">Корзина</p>
+                <div class="basket-container">
+                  <img class="basket-img" src="img/content/icon-ice-pink.png" width="46" height="46"
+                    alt="пломбир с клубничным джемом">
+                  <div class="tovar">
+                    <p class="purchase">Малинка</p>
+                    <span class="heft">1 кг х 310 ₽</span>
+                  </div>
+                  <p class="price-basket">310 ₽</p>
+                  <button type="button" class="delete" aria-label="удалить"></button>
+                </div>
+                <div class="basket-container">
+                  <img class="basket-img" src="img/content/icon-ice-blue.png" width="46" height="46"
+                    alt="пломбир Бабл-гам">
+                  <div class="tovar">
+                    <p class="purchase">Бабл-гам</p>
+                    <span class="heft">1,5 кг х 320 ₽</span>
+                  </div>
+                  <p class="price-basket">480 ₽</p>
+                  <button type="button" class="delete" aria-label="удалить"></button>
+                </div>
+              </div>
+              <div class="place-order">
+                <button class="btn-send place-order-btn">Оформить заказ</button>
+                <p class="total">Итого: 790 ₽</p>
+              </div>
+            </div>
           </li>
         </ul>
       </section>
@@ -69,7 +124,6 @@
       <h2 class="title-catalog">Сливочное мороженое</h2>
       <div class="filters">
         <h2 class="visually-hidden">Фильтры</h2>
-
         <form class="options" action="https://echo.htmlacademy.ru" method="get">
           <div class="filters-group">
             <div class="sort-wrapper">
@@ -81,8 +135,15 @@
               </select>
             </div>
             <div class="detail">
-              <label for="price-options">Цена: 100 ₽ – 500 ₽</label>
-              <input type="range" id="price-options" name="dayscount" min="100" max="500">
+              <p class="price-options">Цена: 100 ₽ – 500 ₽</p>
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar">
+                  </div>
+                </div>
+                <div class="toggle toggle-min"></div>
+                <div class="toggle toggle-max"></div>
+              </div>
             </div>
             <fieldset class="fatness">
               <legend class="filter-title">Жирность:</legend>
@@ -108,150 +169,272 @@
                 </li>
               </ul>
             </fieldset>
-
+          </div>
+          <div class="excipients-wrapper">
             <fieldset class="excipients">
               <legend class="filter-title">Наполнители:</legend>
-              <div class="container-buttons">
-                <input id="chocolate" type="checkbox" name="sugar" value="chocolate" checked><label
-                  for="chocolate">шоколадные</label>
-                <input id="sugar" type="checkbox" name="sugar" value="sugar" checked><label for="sugar">сахарные
-                  присыпки</label>
-                <input id="fruit" type="checkbox" name="sugar" value="fruit"><label for="fruit">фрукты</label>
-                <input id="syrop" type="checkbox" name="sugar" value="syrop"><label for="syrop">сиропы</label>
-                <input id="jam" type="checkbox" name="sugar" value="jam"><label for="jam">джемы</label>
-              </div>
+              <ul class="container-buttons">
+                <li class="checkbox-item checkbox-active">
+                  <input id="chocolate" type="checkbox" class="visually-hidden checkbox" name="sugar" value="chocolate"
+                    checked><label for="chocolate">шоколадные</label>
+                </li>
+                <li class="checkbox-item">
+                  <input id="sugar" type="checkbox" class="visually-hidden checkbox" name="sugar" value="sugar"
+                    checked><label for="sugar">сахарные
+                    присыпки</label>
+                </li>
+                <li class="checkbox-item">
+                  <input id="fruit" type="checkbox" class="visually-hidden checkbox" name="sugar" value="fruit"><label
+                    for="fruit">фрукты</label>
+                </li>
+                <li class="checkbox-item">
+                  <input id="syrop" type="checkbox" class="visually-hidden checkbox" name="sugar" value="syrop"><label
+                    for="syrop">сиропы</label>
+                </li>
+                <li class="checkbox-item">
+                  <input id="jam" type="checkbox" class="visually-hidden checkbox" name="sugar" value="jam"><label
+                    for="jam">джемы</label>
+                </li>
+              </ul>
             </fieldset>
             <button class="btn-filter" type="submit">Применить</button>
           </div>
         </form>
-
       </div>
 
       <section class="tool-cards">
-        <h2 class="visibility-hidden">Карточки товаров</h2>
+        <h2 class="visually-hidden">Карточки товаров</h2>
         <div class="cards-wrapper">
           <article class="product-card">
             <img class="product-photo" src="img/cards/raspberries-ice.png" width="168" height="168" alt="Малинка">
-            <h2 class="ice-cream-name">Малинка</h2>
-            <p class="desc">
-              Сливочное мороженое с малиновым джемом
-            </p>
-            <p class="price">310 ₽/кг</p>
-            <a class="visibility-hidden buy-btn" href="#">Купить</a>
+            <div class="wrapper-card">
+              <h2 class="ice-cream-name">Малинка</h2>
+              <p class="desc">
+                Сливочное мороженое с малиновым джемом
+              </p>
+              <p class="price">310 ₽/кг</p>
+              <a class="buy-btn" href="#">
+                <span><svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 16a16 16 0 1 1 32 0 16 16 0 0 1-32 0Z" fill="#FF2F64" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M9.17 9.25a.67.67 0 0 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46v-.01l.93-4.86a.67.67 0 0 0-.66-.8h-9.3l-.47-2.35a.67.67 0 0 0-.66-.54H9.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H14.18a.5.5 0 0 1-.49-.4Zm-1.13 3.96a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
+                      fill="#FCFCFC" />
+                  </svg></span>
+                <span class="visually-hidden">Купить</span></a>
+            </div>
           </article>
 
           <article class="product-card">
             <img class="product-photo" src="img/cards/pistachio-ice.png" width="168" height="168" alt="Фисташка">
-            <h2 class="ice-cream-name">Фисташка</h2>
-            <p class="desc">
-              Фисташковый пломбир с кусочками шоколада
-            </p>
-            <p class="price">330 ₽/кг</p>
-            <a class="visibility-hidden buy-btn" href="#">Купить</a>
+            <div class="wrapper-card">
+              <h2 class="ice-cream-name">Фисташка</h2>
+              <p class="desc">
+                Фисташковый пломбир с кусочками шоколада
+              </p>
+              <p class="price">330 ₽/кг</p>
+              <a class="buy-btn" href="#">
+                <span><svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 16a16 16 0 1 1 32 0 16 16 0 0 1-32 0Z" fill="#FF2F64" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M9.17 9.25a.67.67 0 0 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46v-.01l.93-4.86a.67.67 0 0 0-.66-.8h-9.3l-.47-2.35a.67.67 0 0 0-.66-.54H9.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H14.18a.5.5 0 0 1-.49-.4Zm-1.13 3.96a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
+                      fill="#FCFCFC" />
+                  </svg></span>
+                <span class="visually-hidden">Купить</span></a>
+            </div>
           </article>
 
           <article class="product-card">
             <img class="product-photo" src="img/cards/blueberry-ice.png" width="168" height="168" alt="Черника">
-            <h2 class="ice-cream-name">Черника</h2>
-            <p class="desc">
-              Крем-брюле
-              с черничным джемом
-            </p>
-            <p class="price">330 ₽/кг</p>
-            <a class="visibility-hidden buy-btn" href="#">Купить</a>
+            <div class="wrapper-card">
+              <h2 class="ice-cream-name">Черника</h2>
+              <p class="desc">
+                Крем-брюле
+                с черничным джемом
+              </p>
+              <p class="price">330 ₽/кг</p>
+              <a class="buy-btn" href="#">
+                <span><svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 16a16 16 0 1 1 32 0 16 16 0 0 1-32 0Z" fill="#FF2F64" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M9.17 9.25a.67.67 0 0 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46v-.01l.93-4.86a.67.67 0 0 0-.66-.8h-9.3l-.47-2.35a.67.67 0 0 0-.66-.54H9.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H14.18a.5.5 0 0 1-.49-.4Zm-1.13 3.96a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
+                      fill="#FCFCFC" />
+                  </svg></span>
+                <span class="visually-hidden">Купить</span></a>
+            </div>
           </article>
 
           <article class="product-card">
             <img class="product-photo" src="img/cards/buble-gum.png" width="168" height="168" alt="Бабл-гам">
-            <h2 class="ice-cream-name">Бабл-гам</h2>
-            <p class="desc">
-              Ванильный пломбир со сладкой посыпкой
-            </p>
-            <p class="price">320 ₽/кг</p>
-            <a class="visibility-hidden buy-btn" href="#">Купить</a>
+            <div class="wrapper-card">
+              <h2 class="ice-cream-name">Бабл-гам</h2>
+              <p class="desc">
+                Ванильный пломбир со сладкой посыпкой
+              </p>
+              <p class="price">320 ₽/кг</p>
+              <a class="buy-btn" href="#">
+                <span><svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 16a16 16 0 1 1 32 0 16 16 0 0 1-32 0Z" fill="#FF2F64" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M9.17 9.25a.67.67 0 0 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46v-.01l.93-4.86a.67.67 0 0 0-.66-.8h-9.3l-.47-2.35a.67.67 0 0 0-.66-.54H9.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H14.18a.5.5 0 0 1-.49-.4Zm-1.13 3.96a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
+                      fill="#FCFCFC" />
+                  </svg></span>
+                <span class="visually-hidden">Купить</span></a>
+            </div>
           </article>
 
           <article class="product-card">
             <img class="product-photo" src="img/cards/blackberry.png" width="168" height="168" alt="Ежевика">
-            <h2 class="ice-cream-name">Ежевика</h2>
-            <p class="desc">
-              Сливочное мороженое с ежевичным джемом
-            </p>
-            <p class="price">330 ₽/кг</p>
-            <a class="visibility-hidden buy-btn" href="#">Купить</a>
+            <div class="wrapper-card">
+              <h2 class="ice-cream-name">Ежевика</h2>
+              <p class="desc">
+                Сливочное мороженое с ежевичным джемом
+              </p>
+              <p class="price">330 ₽/кг</p>
+              <a class="buy-btn" href="#">
+                <span><svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 16a16 16 0 1 1 32 0 16 16 0 0 1-32 0Z" fill="#FF2F64" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M9.17 9.25a.67.67 0 0 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46v-.01l.93-4.86a.67.67 0 0 0-.66-.8h-9.3l-.47-2.35a.67.67 0 0 0-.66-.54H9.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H14.18a.5.5 0 0 1-.49-.4Zm-1.13 3.96a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
+                      fill="#FCFCFC" />
+                  </svg></span>
+                <span class="visually-hidden">Купить</span></a>
+            </div>
           </article>
 
           <article class="product-card">
             <img class="product-photo" src="img/cards/banana.png" width="168" height="168" alt="Банан">
-            <h2 class="ice-cream-name">Банан</h2>
-            <p class="desc">
-              Сливочный пломбир
-              с банановым вкусом
-            </p>
-            <p class="price">340 ₽/кг</p>
-            <a class="visibility-hidden buy-btn" href="#">Купить</a>
+            <div class="wrapper-card">
+              <h2 class="ice-cream-name">Банан</h2>
+              <p class="desc">
+                Сливочный пломбир
+                с банановым вкусом
+              </p>
+              <p class="price">340 ₽/кг</p>
+              <a class="buy-btn" href="#">
+                <span><svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 16a16 16 0 1 1 32 0 16 16 0 0 1-32 0Z" fill="#FF2F64" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M9.17 9.25a.67.67 0 0 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46v-.01l.93-4.86a.67.67 0 0 0-.66-.8h-9.3l-.47-2.35a.67.67 0 0 0-.66-.54H9.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H14.18a.5.5 0 0 1-.49-.4Zm-1.13 3.96a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
+                      fill="#FCFCFC" />
+                  </svg></span>
+                <span class="visually-hidden">Купить</span></a>
+            </div>
           </article>
 
           <article class="product-card">
             <img class="product-photo" src="img/cards/chocolate.png" width="168" height="168" alt="Шоколадка">
-            <h2 class="ice-cream-name">Шоколадка</h2>
-            <p class="desc">
-              Классический шоколадный пломбир
-            </p>
-            <p class="price">240 ₽/кг</p>
-            <a class="visibility-hidden buy-btn" href="#">Купить</a>
+            <div class="wrapper-card">
+              <h2 class="ice-cream-name">Шоколадка</h2>
+              <p class="desc">
+                Классический шоколадный пломбир
+              </p>
+              <p class="price">240 ₽/кг</p>
+              <a class="buy-btn" href="#">
+                <span><svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 16a16 16 0 1 1 32 0 16 16 0 0 1-32 0Z" fill="#FF2F64" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M9.17 9.25a.67.67 0 0 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46v-.01l.93-4.86a.67.67 0 0 0-.66-.8h-9.3l-.47-2.35a.67.67 0 0 0-.66-.54H9.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H14.18a.5.5 0 0 1-.49-.4Zm-1.13 3.96a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
+                      fill="#FCFCFC" />
+                  </svg></span>
+                <span class="visually-hidden">Купить</span></a>
+            </div>
           </article>
 
           <article class="product-card">
             <img class="product-photo" src="img/cards/strawberry.png" width="168" height="168" alt="Клубничка">
-            <h2 class="ice-cream-name">Клубничка</h2>
-            <p class="desc">
-              Сливочный пломбир
-              с клубничным вкусом
-            </p>
-            <p class="price">300 ₽/кг</p>
-            <a class="visibility-hidden buy-btn" href="#">Купить</a>
+            <div class="wrapper-card">
+              <h2 class="ice-cream-name">Клубничка</h2>
+              <p class="desc">
+                Сливочный пломбир
+                с клубничным вкусом
+              </p>
+              <p class="price">300 ₽/кг</p>
+              <a class="buy-btn" href="#">
+                <span><svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 16a16 16 0 1 1 32 0 16 16 0 0 1-32 0Z" fill="#FF2F64" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M9.17 9.25a.67.67 0 0 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46v-.01l.93-4.86a.67.67 0 0 0-.66-.8h-9.3l-.47-2.35a.67.67 0 0 0-.66-.54H9.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H14.18a.5.5 0 0 1-.49-.4Zm-1.13 3.96a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
+                      fill="#FCFCFC" />
+                  </svg></span>
+                <span class="visually-hidden">Купить</span></a>
+            </div>
           </article>
 
           <article class="product-card">
             <img class="product-photo" src="img/cards/lemon.png" width="168" height="168" alt="Лимон">
-            <h2 class="ice-cream-name">Лимон</h2>
-            <p class="desc">
-              Освежающий лимонный сорбет
-            </p>
-            <p class="price">310 ₽/кг</p>
-            <a class="visibility-hidden buy-btn" href="#">Купить</a>
+            <div class="wrapper-card">
+              <h2 class="ice-cream-name">Лимон</h2>
+              <p class="desc">
+                Освежающий лимонный сорбет
+              </p>
+              <p class="price">310 ₽/кг</p>
+              <a class="buy-btn" href="#">
+                <span><svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 16a16 16 0 1 1 32 0 16 16 0 0 1-32 0Z" fill="#FF2F64" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M9.17 9.25a.67.67 0 0 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46v-.01l.93-4.86a.67.67 0 0 0-.66-.8h-9.3l-.47-2.35a.67.67 0 0 0-.66-.54H9.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H14.18a.5.5 0 0 1-.49-.4Zm-1.13 3.96a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
+                      fill="#FCFCFC" />
+                  </svg></span>
+                <span class="visually-hidden">Купить</span></a>
+            </div>
           </article>
 
           <article class="product-card">
             <img class="product-photo" src="img/cards/menthol.png" width="168" height="168" alt="Ментол">
-            <h2 class="ice-cream-name">Ментол</h2>
-            <p class="desc">
-              Сливочный пломбир
-              с ментоловым сиропом
-            </p>
-            <p class="price">320 ₽/кг</p>
-            <a class="visibility-hidden buy-btn" href="#">Купить</a>
+            <div class="wrapper-card">
+              <h2 class="ice-cream-name">Ментол</h2>
+              <p class="desc">
+                Сливочный пломбир
+                с ментоловым сиропом
+              </p>
+              <p class="price">320 ₽/кг</p>
+              <a class="buy-btn" href="#">
+                <span><svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 16a16 16 0 1 1 32 0 16 16 0 0 1-32 0Z" fill="#FF2F64" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M9.17 9.25a.67.67 0 0 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46v-.01l.93-4.86a.67.67 0 0 0-.66-.8h-9.3l-.47-2.35a.67.67 0 0 0-.66-.54H9.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H14.18a.5.5 0 0 1-.49-.4Zm-1.13 3.96a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
+                      fill="#FCFCFC" />
+                  </svg></span>
+                <span class="visually-hidden">Купить</span></a>
+            </div>
           </article>
 
           <article class="product-card">
             <img class="product-photo" src="img/cards/nut.png" width="168" height="168" alt="Орешек">
-            <h2 class="ice-cream-name">Орешек</h2>
-            <p class="desc">
-              Фисташковый пломбир с шоколадным сиропом
-            </p>
-            <p class="price">360 ₽/кг</p>
-            <a class="visibility-hidden buy-btn" href="#">Купить</a>
+            <div class="wrapper-card">
+              <h2 class="ice-cream-name">Орешек</h2>
+              <p class="desc">
+                Фисташковый пломбир с шоколадным сиропом
+              </p>
+              <p class="price">360 ₽/кг</p>
+              <a class="buy-btn" href="#">
+                <span><svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 16a16 16 0 1 1 32 0 16 16 0 0 1-32 0Z" fill="#FF2F64" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M9.17 9.25a.67.67 0 0 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46v-.01l.93-4.86a.67.67 0 0 0-.66-.8h-9.3l-.47-2.35a.67.67 0 0 0-.66-.54H9.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H14.18a.5.5 0 0 1-.49-.4Zm-1.13 3.96a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
+                      fill="#FCFCFC" />
+                  </svg></span>
+                <span class="visually-hidden">Купить</span></a>
+            </div>
           </article>
 
           <article class="product-card">
             <img class="product-photo" src="img/cards/brulee.png" width="168" height="168" alt="Крем-брюле">
-            <h2 class="ice-cream-name">Крем-брюле</h2>
-            <p class="desc">
-              Классическое крем-брюле
-            </p>
-            <p class="price">280 ₽/кг</p>
-            <a class="visibility-hidden buy-btn" href="#">Купить</a>
+            <div class="wrapper-card">
+              <h2 class="ice-cream-name">Крем-брюле</h2>
+              <p class="desc">
+                Классическое крем-брюле
+              </p>
+              <p class="price">280 ₽/кг</p>
+              <a class="buy-btn" href="#">
+                <span><svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 16a16 16 0 1 1 32 0 16 16 0 0 1-32 0Z" fill="#FF2F64" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M9.17 9.25a.67.67 0 0 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46v-.01l.93-4.86a.67.67 0 0 0-.66-.8h-9.3l-.47-2.35a.67.67 0 0 0-.66-.54H9.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H14.18a.5.5 0 0 1-.49-.4Zm-1.13 3.96a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
+                      fill="#FCFCFC" />
+                  </svg></span>
+                <span class="visually-hidden">Купить</span></a>
+            </div>
           </article>
         </div>
         <div class="paginator-wrapper">
